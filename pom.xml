@@ -17,6 +17,9 @@
     <modules>
         <module>usuarios</module>
         <module>notificaciones</module>
+        <module>eventos</module>
+        <module>eureka-server</module>
+        <module>api-gateway</module>
     </modules>
 
 

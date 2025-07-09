@@ -3,10 +3,10 @@ version: '3.8'
 services:
   rabbitmq:
     image: rabbitmq:3-management
-    container_name: rabbitmq
+    container_name: rabbitmqProyecto
     ports:
-      - "5672:5672"       # Puerto para conexión con aplicaciones
-      - "15672:15672"     # Puerto para interfaz web
+      - "5674:5672"       # Puerto para conexión con aplicaciones
+      - "15674:15672"     # Puerto para interfaz web
     environment:
       RABBITMQ_DEFAULT_USER: admin
       RABBITMQ_DEFAULT_PASS: admin
