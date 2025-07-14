@@ -2,9 +2,9 @@ spring:
   application:
       name: SERVICE-NOTIFICACIONES
   datasource:
-    url: jdbc:postgresql://localhost:5432/bd-notificaciones_eventos
-    username: postgres
-    password: 12345
+    url: jdbc:postgresql://localhost:26259/bd_notificaciones_eventos?user=root&password=
+    username: root
+    password:
   jpa:
     hibernate:
       ddl-auto: update #create-drop
@@ -16,10 +16,10 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   rabbitmq:
     host: localhost
-    port: 5672
+    port: 5674
     username: admin
     password: admin
 server:
-  port: 8091
+  port: 0
 
 

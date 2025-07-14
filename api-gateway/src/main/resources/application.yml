@@ -20,10 +20,16 @@ spring:
                 - Path=/api/v1/usuarios/**
               filters:
                 - StripPrefix=2
-            - id: publicaciones-libros
-              uri: lb://SERVICE-PUBLICACIONES
+            - id: Roles
+              uri: lb://SERVICE-USUARIOS
               predicates:
-                - Path=/api/v1/libros/**
+                - Path=/api/v1/roles/**
+              filters:
+                - StripPrefix=2
+            - id: eventos
+              uri: lb://SERVICE-EVENTOS
+              predicates:
+                - Path=/api/v1/eventos/**
               filters:
                 - StripPrefix=2
             - id: publicaciones-paper

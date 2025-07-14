@@ -1,8 +1,8 @@
 spring:
   application:
-      name: SERVICE-USUARIOS
+    name: SERVICE-EVENTOS
   datasource:
-    url: jdbc:postgresql://localhost:26259/bd_usuarios?user=root&password=
+    url: jdbc:postgresql://localhost:26259/bd_eventos?user=root&password=
     username: root
     password:
   jpa:
